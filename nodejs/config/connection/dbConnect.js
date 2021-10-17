@@ -8,3 +8,5 @@ mongoose.connect("mongodb+srv://nene:pass@cluster0.ka1ym.mongodb.net/TroovProjec
         console.log('error in db connection')
     }
 });
+require ("../../models/userModel");
+require ("../../models/itemModel");
