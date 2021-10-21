@@ -1,10 +1,10 @@
-const express    = require('express');
+const express = require('express');
 const bodyParser = require('body-parser');
-const path       = require('path');
-const cors       = require('cors');
+const path = require('path');
+const cors = require('cors');
 const passport = require('passport');
 
-const app        = express();
+const app = express();
 
 
 require('./config/config')
@@ -15,7 +15,7 @@ require('./config/passport')
 
 
 // midleware
-app.use(bodyParser.json()); 
+app.use(bodyParser.json());
 app.use(cors());
 app.use(passport.initialize());
 app.use('/api', require('./routes/userRouter'));
