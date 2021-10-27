@@ -23,6 +23,9 @@ app.use('/api/item', require('./routes/itemRouter'));
 
 
 
+
+
+
 //start server
 app.listen(3001, () => {
     console.log('server is started at port 3001')
